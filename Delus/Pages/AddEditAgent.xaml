@@ -1,0 +1,123 @@
+﻿<Page x:Class="Delus.Pages.AddEditAgent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Delus.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditAgent">
+
+    <Grid>
+        <Grid  Margin="30" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+           
+            <Grid Width="300" HorizontalAlignment="Left" >
+
+            </Grid>
+           
+            <!--<Border MinWidth="600" MaxWidth="550" Background="Gray" VerticalAlignment="Center" Margin="15" Padding="30" CornerRadius="20" Grid.Row="5">-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid>
+                        
+                    </Grid>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock2}">Наименование</TextBlock>
+                            <TextBox x:Name="NameTbx" Style="{StaticResource BaseControl}" Text="{Binding Title}"></TextBox>
+                        <TextBlock Style="{StaticResource TxtBlock2}">Тип агента</TextBlock>
+                        <ComboBox x:Name="TypeCb" Style="{StaticResource BaseControl2}" SelectedItem="{Binding AgentType}" SelectedIndex="0"></ComboBox>
+                    </StackPanel>
+                        <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock}">Поставщик</TextBlock>
+                            <ComboBox x:Name="ProviderCbx" Style="{StaticResource CmBox}" SelectedItem="{Binding Provider}" SelectedIndex="0"></ComboBox>
+                        </StackPanel>-->
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock2}">Приоритет</TextBlock>
+                            <TextBox x:Name="PriorityTb" Style="{StaticResource BaseControl}" Text="{Binding Priority}"></TextBox>
+                        <TextBlock Style="{StaticResource TxtBlock2}">Адрес</TextBlock>
+                        <TextBox x:Name="AddressTb" Style="{StaticResource BaseControl}" Text="{Binding Address}"></TextBox>
+                    </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock2}"> ИНН</TextBlock>
+                            <TextBox x:Name="INNTb" Style="{StaticResource BaseControl}" Text="{Binding INN}"></TextBox>
+                        <TextBlock Style="{StaticResource TxtBlock2}">КПП</TextBlock>
+                        <TextBox x:Name="KPPTb" Style="{StaticResource BaseControl}" Text="{Binding KPP}"></TextBox>
+                    </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock2}">Фамилия</TextBlock>
+                            <TextBox x:Name="FNametb" Style="{StaticResource BaseControl}" Text="{Binding FirstName}"></TextBox>
+                        <TextBlock Style="{StaticResource TxtBlock2}">Имя</TextBlock>
+                        <TextBox x:Name="LNameTb" Style="{StaticResource BaseControl}" Text="{Binding LastName}"></TextBox>
+                    </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock2}">Отчество</TextBlock>
+                            <TextBox x:Name="PNameTb" Style="{StaticResource BaseControl}" Text="{Binding Patronymic}"></TextBox>
+                        <TextBlock Style="{StaticResource TxtBlock2}">Телефон</TextBlock>
+                        <TextBox x:Name="PhoneTb" Style="{StaticResource BaseControl}" Text="{Binding Phone}"></TextBox>
+                    </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                          
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock2}">Email</TextBlock>
+                            <TextBox x:Name="EmailTb" Style="{StaticResource BaseControl}" Text="{Binding Email}"></TextBox>
+                        </StackPanel>
+                        <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock}">Актуально</TextBlock>
+                            <RadioButton x:Name="ActiveRbtn"  IsChecked="{Binding IsActive}"></RadioButton>
+                        </StackPanel>
+                        --><!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <TextBlock Style="{StaticResource TxtBlock}">Не Актуально</TextBlock>
+                        <RadioButton x:Name="NotActiveRbtn"  IsChecked="False"></RadioButton>
+                    </StackPanel>-->
+                        <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock}">Стоимость</TextBlock>
+                            <TextBox x:Name="CostTbx" Style="{StaticResource TxtBox}" Text="{Binding Price}"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Style="{StaticResource TxtBlock}">Описание</TextBlock>
+                            <TextBox x:Name="TimeTbx" Style="{StaticResource TxtBox}" Text="{Binding Description}"></TextBox>
+                        </StackPanel>-->
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button x:Name="SaveBtn" Content="Сохранить" Click="SaveBtn_Click"  Margin="5"></Button>
+                            <Button  x:Name="Otmena" Click="Otmena_Click" Margin="5">Отмена</Button>
+                        </StackPanel>
+
+                    </StackPanel>
+
+
+                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+
+                        <Image Height="250" Width="200"  x:Name="AgentImage" Source="{Binding Logo}"></Image>
+                        <Button Name="AddImageBtn" Click="AddImageBtn_Click">Добавить изображение</Button>
+
+
+                    </StackPanel>
+
+                </StackPanel>
+            <!--</Border>-->
+        </Grid>
+    </Grid>
+</Page>
